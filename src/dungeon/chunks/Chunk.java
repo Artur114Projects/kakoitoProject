@@ -7,11 +7,12 @@ public class Chunk {
     }
     public String[] getChunk(boolean isPlayerHere) {
         String[] chunk1 = chunk;
+        String s;
         if (isPlayerHere) {
-            chunk1[4] = chunk1[4].replace('^', '0');
+            s = chunk1[4].replace('^', '0');
         } else {
-            chunk1[4] = chunk1[4].replace('^', ' ');
+            s = chunk1[4].replace('^', ' ');
         }
-        return chunk1;
+        return new String[] {chunk1[0], chunk1[1], chunk1[2], chunk1[3], s, chunk1[5],  chunk1[6], chunk1[7], chunk1[8], chunk1[9]};
     }
 }

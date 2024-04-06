@@ -3,7 +3,7 @@ package dungeon;
 import dungeon.chunks.Chunk;
 import dungeon.chunks.IDungeonChunks;
 
-public class Compiler implements IDungeonChunks, ISettings{
+public class Compiler implements ISettings, IDungeonChunks{
     byte[][] dungeonMap = new byte[][] {
         {4, 1, 1},
         {4, 1, 4},

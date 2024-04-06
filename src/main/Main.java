@@ -24,7 +24,7 @@ public class Main {
         Player player = new Player((byte) 0, (byte) 0);
         while (true) {
 
-            if (rx > 15 || rx < 1 || ry > 15 || ry < 1) {
+        if (rx > 15 || rx < 1 || ry > 15 || ry < 1) {
                 return;
             } else {
                 for (int y = ry - 1; y <= ry + 1; y++) {
@@ -34,6 +34,7 @@ public class Main {
                     }
                 }
 
+                System.out.print("\033[H\033[2J");
                 Compiler c = new Compiler(map, mapR, player);
                 c.SOUT();
             }

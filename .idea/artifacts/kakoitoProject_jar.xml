@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kakoitoProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/kakoitoProject_jar</output-path>
+    <root id="archive" name="kakoitoProject.jar">
+      <element id="module-output" name="kakoitoProject" />
+    </root>
+  </artifact>
+</component>
