@@ -1,12 +1,14 @@
 package dungeon;
 
 public class Player {
-    byte posX = 0;
-    byte posY = 0;
+    public byte posX = 0;
+    public byte posY = 0;
+    private Map map;
 
-    public Player(byte x, byte y) {
+    public Player(byte x, byte y, Map map) {
         posX = x;
         posY = y;
+        this.map = map;
     }
 
     public void move(String s) {
